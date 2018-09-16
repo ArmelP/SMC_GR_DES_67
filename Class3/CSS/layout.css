@@ -1,0 +1,10 @@
+.container {
+    background-color: lightsteelblue;
+}
+
+@media (min-width: 768px) {
+    .image-title-prg {
+        height: 260px;
+        display: table-cell;
+    }
+}
