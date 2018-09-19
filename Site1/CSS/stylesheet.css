@@ -1,0 +1,18 @@
+.btn-secondary.focus, .btn-secondary:focus {
+    box-shadow: none; 
+}
+
+.apDropStyle {
+    background-color: aliceblue;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.apDropItem:hover {
+    background-color: darkslategrey;
+    color: aliceblue;
+}
+
+.apScrollText {
+    overflow-y: auto;
+}
