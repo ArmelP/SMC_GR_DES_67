@@ -1,3 +1,16 @@
+/* STYLES FOR SITE 1 BY ARMEL */
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+html, body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    background-image: url("../IMAGES/hexbg2.jpg");
+    background-repeat: repeat;
+}
+
 .btn-secondary.focus, .btn-secondary:focus {
     box-shadow: none; 
 }
@@ -15,4 +28,16 @@
 
 .apScrollText {
     overflow-y: auto;
+}
+
+.apblanknav {
+    height: 4vh;
+}
+
+.APtextCenter {
+    text-align: center;
+}
+
+.card {
+    box-shadow: 10px 10px 9px 1px #343636;
 }

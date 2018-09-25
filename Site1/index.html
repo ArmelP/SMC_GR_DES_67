@@ -9,6 +9,9 @@
         
         <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
 
+        <!-- My own stylesheets -->
+        <link rel="stylesheet" href="CSS/stylesheet.css">  
+
 <!--
     |||||||\
     |||||||\\\____________________________________
@@ -161,21 +164,27 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="rounded-circle" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia21386.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Missions</h2>
-          <p>Check out images from various missions by NASA and ESA.</p>
+          <div class="row">
+              <div class="col-lg-3 invisible"></div>
+              <div class="col-lg-1">
+                <img class="rounded-circle" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia21386.jpg" alt="Generic placeholder image" width="140" height="140">
+              </div>
+              <div class="col-lg-5 invisible"></div>
+          </div>
+          <h2 class="APtextCenter">Missions</h2>
+          <p class="APtextCenter">Check out images from various missions by NASA and ESA.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia22424.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>People</h2>
-          <p>Learn all about the smart people you should be familiar with.</p>
+          <h2 class="APtextCenter">People</h2>
+          <p class="APtextCenter">Learn all about the smart people you should be familiar with.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle" src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia21983.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Future</h2>
-          <p>Plans. Expectations. Extrapolations. Dreams.</p>
+          <h2 class="APtextCenter">Future</h2>
+          <p class="APtextCenter">Plans. Expectations. Extrapolations. Dreams.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
@@ -191,8 +200,8 @@
         </div><!-- /.col-lg-1 -->
         <div class="col-lg-3">
           <img class="rounded-circle" src="http://scienceinseconds.com/cmsFiles/pageImages/CMS-4e-evt-876658967-3D-subformat-icon-640.gif" alt="Generic placeholder image" width="140" height="140">
-          <h2>Higgs Field</h2>
-          <p>Your mommy-daddy.</p>
+          <h2 class="APtextCenter">Higgs Field</h2>
+          <p class="APtextCenter">Your mommy-daddy.</p>
           <p><a class="btn btn-secondary" href="https://twitter.com/seanmcarroll/status/998358342878674948" target="_blank" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-3 -->
         <div class="col-lg-2 invisible">
@@ -203,8 +212,8 @@
         </div><!-- /.col-lg-2 -->
         <div class="col-lg-3">
           <img class="rounded-circle imgfixap" src="https://physicsworld.com/wp-content/uploads/2006/09/LLOYDblack-hole.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Black Hole</h2>
-          <p>...</p>
+          <h2 class="APtextCenter">Black Hole</h2>
+          <p class="APtextCenter">...</p>
           <p><a class="btn btn-secondary" href="https://www.youtube.com/" target="_blank" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-3 -->
         <div class="col-lg-1 invisible">
@@ -245,8 +254,8 @@
     
     <br><br><br>                
           <!-- Dumb little newsletter form at bottom -->
-          <form>
-            <div class="form-group d-none d-sm-none d-md-block">
+          <form class="d-none d-sm-none d-md-block">
+            <div class="form-group">
               <label for="exampleInputEmail1">Sign up for newsletter to receive crazy shit</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -269,6 +278,26 @@
         <br> <br>
         <a href="https://www.dictionary.com/browse/nowhere?s=t" target="_blank">Go Nowhere</a>
     
+
+        <!--Duplicating nav bar as invisible to create space above footer-->
+
+        <!--**************************************************************************************-->
+        <nav class="navbar navbar-expand-md navbar-dark invisibleapblanknav" style="margin-top: 4vh;">
+          <div class="collapse navbar-collapse" id="navbarCollapse">            
+          </div>
+        </nav>
+    
+        <!--**************************************************************************************-->    
+
+  </main>
+
+  <footer>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-bottom bg-dark apblanknav">
+        <div class="collapse navbar-collapse" id="navbarCollapse">            
+        </div>
+      </nav>
+  </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
