@@ -34,10 +34,10 @@ body {
     height: 4vh;
 }
 
-.APtextCenter {
-    text-align: center;
-}
-
 .card {
     box-shadow: 10px 10px 9px 1px #343636;
+}
+
+.ap_row_space {
+    margin-top: 7vh;
 }
