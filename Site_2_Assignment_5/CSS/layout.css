@@ -1,0 +1,33 @@
+/* LAYOUT STYLES BY ARMEL */
+
+
+
+.apLogoNav {
+    width: 100%;
+    /* max-width: 15vw; */
+}
+
+.apImgConstrain {
+    max-width: 300px;
+    max-height: 300px;
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.apColHeight1 {
+    object-fit: cover;
+    height: auto;    
+}
+
+/* .apRowHeight1 {
+    height: 50%;    
+} */
+
+/* .apButtHeight1 {
+    max-height: 100%;
+} */
+
+/* .apColMargFix {
+    margin: 0;
+} */
