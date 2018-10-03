@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Class 6</title>
+
+        <!-- look into favicons -->
+        <!-- for FF, Chrome, Opera -->
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+
+        <!-- for IE -->
+        <link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico" >
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico"/>
+
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />
+
+        <style>
+            .container {
+                background-color: lightblue;
+            }
+        </style>
+
+        
+    </head>
+    <body>
+        
+        <button id="append">append</button>
+        <button id="appendTo">appendTo</button>
+        <button id="prepend">prepend</button>
+        <button id="prependTo">prependTo</button>
+
+        <hr>
+
+        <button id="before">before</button>
+        <button id="after">after</button>
+
+        <hr>
+
+        <button id="remove">remove</button>
+        <button id="removeAll">remove all</button>
+
+        <div class="container">
+            <h1>Hello, World!</h1>
+        </div>
+
+
+
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('#append').on("click", function(){
+                    $(".container").append('<p style="color: red;">Appending!</p>');
+                });
+
+                $('#appendTo').on("click", function(){
+                    $('<p style="color: blue;">Appending To!</p>').appendTo(".container");
+                });
+
+                $('#prepend').on("click", function(){
+                    $(".container").prepend('<p style="color: green;">Prepending!</p>');
+                });
+
+                $('#prependTo').on("click", function(){
+                    $('<p style="color: grey;">Prepending To!</p>').prependTo(".container");
+                });
+
+                $('#before').on('click', function(){
+                    $(".container").before('<p style="color: orange;">Adding Before!</p>');
+                });
+
+                $('#after').on('click', function(){
+                    $(".container").after('<p style="color: purple;">Adding After!</p>');
+                });
+                
+                //only p inside .container
+                $("#remove").on('click', function(){
+                    $("p", ".container").remove();
+                });
+
+                $("#removeAll").on('click', function(){
+                    $("p").remove();
+                });
+
+            });
+        </script>
+    </body>
+</html> 

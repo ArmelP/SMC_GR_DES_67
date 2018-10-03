@@ -40,3 +40,9 @@ body, html {
         background-color: #545454;
         border-color: #545454;
     }
+
+.disabled {
+    color: #fff;
+    background-color: #cdcdcd;
+    border-color: #cdcdcd;
+}
