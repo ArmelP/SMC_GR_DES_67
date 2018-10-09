@@ -1,0 +1,30 @@
+/* TYPE STYLES FOR AMONGER BY ARMEL */
+
+@import url('https://fonts.googleapis.com/css?family=Krub:400,400i,700,700i');
+
+body, html {
+    font-family: 'Krub', sans-serif;
+}
+
+.nav-link {
+    color: #333333;
+    text-align: center;
+    font-weight: 400;
+}
+
+    .nav-link:hover {
+        color: #f421f4;
+        
+    }
+
+.apmodPauseBtn {
+    font-weight: 700;
+}
+
+.apmodPlayBtn {
+    font-weight: 700;
+}
+
+.apModPara {
+    font-size: 10pt;
+}

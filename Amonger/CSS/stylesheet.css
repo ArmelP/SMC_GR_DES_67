@@ -1,0 +1,41 @@
+/* GENERAL STYLES FOR AMONGER BY ARMEL */
+
+
+/* Everything re fonts and type */
+@import url("typography.css");
+
+/* Everthing re layout and grid */
+@import url("layout.css");
+
+
+body {
+    background-color: white;
+}
+
+button:focus {
+    outline: 5px auto transparent;
+    outline-color: transparent;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+.btn-secondary {
+    background-color: #f421f4;
+}
+
+.apmodPlayBtn {
+    padding: 0.1rem;
+    
+}
+
+.apmodPauseBtn {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    
+}
+
+.apmodBtn {
+    background-color: white;
+}
