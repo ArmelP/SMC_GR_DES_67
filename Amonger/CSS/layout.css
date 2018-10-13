@@ -20,8 +20,8 @@
 
 .apmodBtn {
     position: absolute;
-    bottom: 5%;
-    left: 5%;
+    bottom: 0.5%;
+    left: 0.5%;
     z-index: 500;
 }
 
@@ -52,6 +52,11 @@ figure {
 }
 
 .apMediaImg {
+    width: 64px;
+    height: 64px;
+}
+
+.apAvatar {
     width: 64px;
     height: 64px;
 }

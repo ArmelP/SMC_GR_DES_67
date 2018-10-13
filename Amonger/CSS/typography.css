@@ -1,9 +1,9 @@
 /* TYPE STYLES FOR AMONGER BY ARMEL */
 
-@import url('https://fonts.googleapis.com/css?family=Krub:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
 
 body, html {
-    font-family: 'Krub', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 .nav-link {
@@ -26,5 +26,5 @@ body, html {
 }
 
 .apModPara {
-    font-size: 10pt;
+    font-size: 12pt;
 }

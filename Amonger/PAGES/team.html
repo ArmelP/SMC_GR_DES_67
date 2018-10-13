@@ -78,7 +78,7 @@
             </div>
         </header>
 
-        <main class="">
+        <main class="container-fluid">
 
             <!-- <div class="row mt-3"> -->
                 <div class="d-flex justify-content-center flex-fill">
@@ -88,7 +88,7 @@
                 </div>
             <!-- </div> -->
 
-            <div class="row container-fluid mt-3">
+            <div class="row mt-3">
                 <div class="col-sm-2 col-md-3"></div>
                 <div class="col-12 col-sm-8 col-md-6 px-4">
                     <p class="apModPara">Amonger was founded by I.P. Freely and Ben Dover who had previously spent 20 years combined at a nuclear waste facility. When they realized that they preferred to be in the same room while working even if they didn't talk, they knew that something importrant was brewing. Amonger laser focuses on pioneering and building a "semi-social" network that works fast and reliably anywhere in the world.</p>
@@ -101,53 +101,65 @@
                 </div>
             </div>
             <div class="row mb-5">
-                <div class="col-12">
-                        <table class="table table-striped">
-                                <thead>
-                                    <tr>                                    
+                <div class="col-sm-2 col-md-3"></div>
+                <div class="col-12 col-sm-8 col-md-6 px-4">
+                        <table class="table table-striped"> 
+                                <thead> 
+                                    <tr> <!-- after here -->
+                                        <th scope="col"></th>
                                         <th scope="col">Name</th>
                                         <th scope="col">Position</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">Betsy Delgado</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=42" class="apAvatar"></td>
+                                        <td>Betsy Delgado</td>                                    
                                         <td>COO</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Geneva Armstrong</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=45" class="apAvatar"></td>
+                                        <td>Geneva Armstrong</td>                                    
                                         <td>Head of Design</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Jermaine Hughes</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=51" class="apAvatar"></td>
+                                        <td>Jermaine Hughes</td>                                    
                                         <td>iOS Development</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Ray Abbott</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=8" class="apAvatar"></td>>
+                                        <td>Ray Abbott</td>                                    
                                         <td>Marketing</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Rosie Adkins</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=49" class="apAvatar"></td>
+                                        <td>Rosie Adkins</td>                                    
                                         <td>Finance</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Colin Bates</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=18" class="apAvatar"></td>
+                                        <td>Colin Bates</td>                                    
                                         <td>Windows Development</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Terrell Walton</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=7" class="apAvatar"></td>
+                                        <td>Terrell Walton</td>                                    
                                         <td>Web Design</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Anne Underwood</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=5" class="apAvatar"></td>
+                                        <td>Anne Underwood</td>                                    
                                         <td>iOS Development</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Sonia Gutierrez</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=44" class="apAvatar"></td>
+                                        <td>Sonia Gutierrez</td>                                    
                                         <td>Android Development</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">Patty Rice</th>                                    
+                                        <td><img src="http://i.pravatar.cc/400?img=16" class="apAvatar"></td>                                        
+                                        <td>Patty Rice</td>                                    
                                         <td>Web Development</td>
                                     </tr>
                                             
@@ -162,10 +174,10 @@
 
             <div class="row text-right mr-2 mt-1">
                 <div class="col fixed-bottom mb-1 d-block d-md-none">
-                    <a href="" data-toggle="modal" data-target="#downloadModalTeam"><button type="button" class="btn btn-secondary btn-sm">Download now</button></a>
+                    <a href="" data-toggle="modal" data-target="#downloadModalTeam"><button type="button" class="btn btn-secondary btn-sm">Get App</button></a>
                 </div>
-                <div class="col d-none d-md-block">
-                    <a href="" data-toggle="modal" data-target="#downloadModalTeam"><button type="button" class="btn btn-secondary">Download now</button></a>
+                <div class="col fixed-bottom d-none d-md-block">
+                    <a href="" data-toggle="modal" data-target="#downloadModalTeam"><button type="button" class="btn btn-secondary">Get App</button></a>
                 </div>
             </div>
 
@@ -174,19 +186,20 @@
 
         <!-- Modal -->
         <div class="modal fade" id="downloadModalTeam" tabindex="-1" role="dialog" aria-labelledby="downloadModalLabelTeam" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">                        
                     <div class="modal-header">
-                        <h5 class="modal-title" id="downloadModalLabelTeam">Download Initiated</h5>
+                        <h5 class="modal-title" id="downloadModalLabelTeam">Getting App</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Your download will begin in 5 seconds.</p>
+                        <p>You are about to leave this page.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     </div>
                 </div>
             </div>
