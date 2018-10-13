@@ -58,7 +58,7 @@
                 <!-- <img src="IMG/amonger_icon.png" class="apIconLimit mr-2">             -->
                 <div class="col-12">
                      
-                        <nav class="navbar navbar-expand-lg navbar-light">
+                        <nav class="navbar navbar-expand-md navbar-light">
                             <a class="navbar-brand" href="../index.html"><img src="../IMG/amonger_icon.png" class="apIconLimit d-sm-none"></a>
                             <a class="navbar-brand" href="../index.html"><img src="../IMG/amonger_wordmark.png" class="apWordmarkLimit d-none d-sm-block"></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,14 +72,17 @@
                                     <a class="nav-item nav-link" href="services.html">Services</a>
                                 </div>
                             </div>
+                            <div class="d-none d-md-block">
+                                <a href="" data-toggle="modal" data-target="#downloadModalAbout"><button type="button" class="btn btn-secondary">Get App</button></a>
+                            </div>
                         </nav>
                     
                 </div>
             </div>
         </header>
 
-        <main>
-             <div class="row container-fluid mt-3">
+        <main class="container-fluid">
+            <div class="row mt-4 pl-sm-2">
                 <div class="col-lg-2"></div>           
                 <div class="col-12 col-sm-7 col-md-4 col-lg-3">
                     <p class="apModPara">Do you like the feeling of being around people in a coffee shop while you're immersed in your own laptop world? What if we told you that we have improved that experience?</p>                    
@@ -90,27 +93,30 @@
                 <div class="col-12 col-sm-7 col-md-4 col-lg-3">                    
                     <p class="apModPara">With Amonger, you create a network of friends with whom you can essentially curate the people around you as you go about your day. </p>
                 </div>
-             </div>
+            </div>
 
-             <div class="row">
-                 <div class="col-12">
-                     <figure class="apAboutFigure">
-                         <img src="../IMG/14.jpg" class="apAboutImg">
-                     </figure>
+            <div class="row">
+                <div class="col-12">
+                    <figure class="apAboutFigure">
+                        <img src="../IMG/14.jpg" class="apAboutImg">
+                    </figure>
                  </div>
-             </div>
+            </div>
 
 
-             <div class="row text-right mr-2 mt-1">
-                    <div class="col fixed-bottom mb-1 d-block d-md-none">
-                        <a href="" data-toggle="modal" data-target="#downloadModalAbout"><button type="button" class="btn btn-secondary btn-sm">Get App</button></a>
-                    </div>
-                    <div class="col fixed-bottom d-none d-md-block">
-                        <a href="" data-toggle="modal" data-target="#downloadModalAbout"><button type="button" class="btn btn-secondary">Get App</button></a>
-                    </div>
+            <!-- Get App Button -->
+            <div class="row text-right mr-2 mt-1">
+                <!-- Button Space -->
+                <div class="col invisible mb-1 d-block d-md-none">
+                    <a href="" data-toggle="modal" data-target=""><button type="button" class="btn btn-secondary btn-sm btn-block">Get App</button></a>
                 </div>
-    
-            </main>
+
+                <!-- Actual Button -->
+                <div class="col fixed-bottom mb-1 d-block d-md-none">
+                    <a href="" data-toggle="modal" data-target="#downloadModalAbout"><button type="button" class="btn btn-secondary btn-sm btn-block">Get App</button></a>
+                </div>                
+            </div>    
+        </main>
     
     
             <!-- Modal -->
@@ -127,7 +133,7 @@
                             <p>You are about to leave this page.</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+                            <button type="button" class="btn btn-secondary">OK</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                         </div>
                     </div>

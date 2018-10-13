@@ -39,3 +39,62 @@ button:focus {
 .apmodBtn {
     background-color: white;
 }
+
+.btn-outline-dark {
+    border-color: #c7c8c9;
+}
+    
+.jumbotron {
+    background-color: transparent;
+}
+
+.apTeamImg {
+    width: 100vw;
+    height: 47.5vw;
+    max-width: 800px;
+    max-height: 380px;
+}
+
+.apMediaImg {
+    max-width: 444px;
+    max-height: 331px;
+    min-width: auto;
+    min-height: 64px;
+
+    height: 64px;
+    width: auto;
+}
+
+.apAvatar {
+    width: 64px;
+    height: 64px;
+}
+
+
+@media (min-width: 576px) { 
+    .apMediaImg {
+        height: 80px;
+        width: auto;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .apMediaImg {
+        height: 100px;
+        width: auto;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .apMediaImg {
+        height: 200px;
+        width: auto;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .apMediaImg {
+        height: 331px;
+        width: auto;
+    }
+ }
