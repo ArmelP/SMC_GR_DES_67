@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- My Styles -->
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+        <title>Select Elements</title>
+    </head>
+    
+    <body>
+        <main class="container-fluid">
+
+            <div class="row mt-1">
+                <div class="col-12 text-center">
+                    <h1>Select Elements</h1>
+                </div> <!-- end col -->
+            </div> <!-- end row -->
+
+            <div class="row mt-4">
+
+                <div class="col-1 d-sm-none d-md-block col-md-1 col-lg-2 order-2 order-sm-1"></div>
+
+                <div class="col-10 col-sm-6 col-md-5 col-lg-4 order-3 order-sm-2 p-0">
+                    <figure class="text-center">
+                        <img id="tardigradeDrawing" src="figure.png" alt="tardigrade drawing">
+                    </figure>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-5 col-lg-4 order-1 order-sm-3 mb-5">
+                    <div class="row">
+                        <div class="col-12 mb-4 text-center text-sm-left">
+                            <h5>Tardigrades from the Family Tanarctidae</h5>
+                        </div> <!-- end col -->
+
+                        <!-- FORM -->
+                        <div class="col-12">
+                            <form id="tardigradeForm" action="http://www.letswatchstartrek.com/wp-content/uploads/2017/10/43-2.jpg"> <!-- What is action="auto-select.php" -->
+
+                                <fieldset>
+                                    <label for="genus">Tanarctidae Genus: &nbsp &nbsp</label>  
+                                    <select id="genus" name="genus">
+                                        <option value="" selected="selected"></option>
+                                        <option value="actinarctus">Actinarctus</option>
+                                        <option value="tanarctus">Tanarctus</option>
+                                        <option value="zioella">Zioella</option>                    
+                                    </select>
+                                </fieldset>
+
+                                <fieldset>
+                                    <label for="species">Tanarctidae Species: &nbsp</label>
+                                    <select id="species" name="species" disabled>
+                                    </select>
+                                </fieldset>
+                                
+                                <fieldset class="mt-4">
+                                    <input id="submitButton" type="submit" value="Click to see its funny body."> <!-- attempted to begin disabled and remove prop with validation -->
+                                </fieldset>
+
+                            </form>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                </div> <!-- end col -->
+            </div> <!-- end row -->
+
+        </main> <!-- end container -->
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready( function(){
+                var actinarctusSpecies = ["", "doryphorus", "lyrophorus", "neretinus", "physophorus"];
+                var tanarctusSpecies = ["", "arborspinosus", "bubulubus", "dendriticus", "diplocerus", "gracilis", "helleouetae", "heterodactylus", "hirsutospinosus", "longisetosus", "minotauricus", "ramazzottii", "tauricus", "velatus"];
+                var zioellaSpecies = ["", "pavonina"];
+                                
+                var updateSpecies = function(){
+                console.log($('#genus').val());
+                $('#species').removeAttr('disabled');
+                $('#species').html('');
+
+                if($('#genus').val() === 'actinarctus'){
+                    for(var i = 0; i < actinarctusSpecies.length; i++){
+                    console.log(actinarctusSpecies[i]);
+                    var htmlContent = '<option value="' + actinarctusSpecies[i] + '">' + actinarctusSpecies[i] + "</option>";
+                    $('#species').append(htmlContent);
+                    }
+                }
+                if($('#genus').val() === 'tanarctus'){
+                    for(var i = 0; i < tanarctusSpecies.length; i++){
+                    console.log(tanarctusSpecies[i]);
+                    var htmlContent = '<option value="' + tanarctusSpecies[i] + '">' + tanarctusSpecies[i] + "</option>";
+                    $('#species').append(htmlContent);
+                    }
+                }
+                if($('#genus').val() === 'zioella'){
+                    for(var i = 0; i < zioellaSpecies.length; i++){
+                    console.log(zioellaSpecies[i]);
+                    var htmlContent = '<option value="' + zioellaSpecies[i] + '">' + zioellaSpecies[i] + "</option>";
+                    $('#species').append(htmlContent);
+                    }
+                }
+                
+                }
+                
+                $('#genus').change(function(){
+                updateSpecies();
+                });
+
+                // $('#species').on('blur', function() {
+                //     if ($("#tardigradeForm").valid()) {
+                //         $('#submit').removeAttr('disabled');  
+                //     } 
+                // });
+    
+                // $("#tardigradeForm").validate({
+                //     rules: {
+                //         species: {
+                //             minlength: 1
+                //         }            
+                //     }
+                // });    
+
+            } );
+        </script>
+    </body>
+</html>

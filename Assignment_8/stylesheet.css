@@ -1,0 +1,39 @@
+/* STYLES FOR ASSIGNMENT 8 BY ARMEL */
+
+body {
+    background-color: black;    
+    color: whitesmoke;
+}
+
+#tardigradeDrawing {
+    width: 266px; /* col-10 */
+    height: auto;
+}
+
+@media (min-width: 576px) { 
+    #tardigradeDrawing {
+        width: 260px; /* col-sm-6, col = 48px*/
+        height: auto;
+    }
+ }
+
+@media (min-width: 768px) { 
+    #tardigradeDrawing {
+       width: 320px; /* col-md-5, col = 64px*/
+       height: auto; 
+    }
+ }
+
+@media (min-width: 992px) { 
+    #tardigradeDrawing {
+        width: 328px; /* col-lg-4 col = 82px*/
+        height: auto;
+    }
+ }
+
+/* @media (min-width: 1200px) { 
+    #tardigradeDrawing {
+        width: px; 
+        height: auto;
+    }
+ } */
