@@ -134,14 +134,49 @@
 
     <script>
         $(document).ready( function(){
-            $('.form-control').on('blur', function() {
-                if($('input').val() === ''){
-                    $('input').append('<p>Required Field</p>');
-                };
-                if($('select').val() === ''){
-                    $('select').append('<p>Required Field</p>');
-                };
-            });
+
+            //this works but requires repetition
+            // console.log("Ready")
+            // $("#inputFName").on('blur', function(){
+            //     if($("#inputFName").val() === "") {
+            //         console.log("Blur")
+            //         $("#inputFName").after('<p>Required Field</p>');
+            //     }
+            // }
+            
+
+            //this solves the repetition.  e identifies the event that triggered the last function. in this case, the blur. it's the awareness of itself.
+            $("input").on('blur', function(e){
+                console.log(e);
+                if($(e.currentTarget).val() === ''){
+                    $(e.currentTarget).siblings('.error-message').remove(); //prevents message to be appended more than once. Also replaces else statement.
+                    $(e.currentTarget).after('<p class="error-message">Required Field</p>');
+                }
+                
+            })
+
+            $("select").on('blur', function(e){
+                console.log(e);
+                if($(e.currentTarget).val() === ''){
+                    $(e.currentTarget).siblings('.error-message').remove(); 
+                    $(e.currentTarget).after('<p class="error-message">Required Field</p>');
+                }
+                // else {$(e.currentTarget).siblings('.error-message').remove();                    
+                // }
+            })
+
+
+
+                //My old stuff
+            // $('.form-control').on('blur', function() {  //
+            //     console.log("Blur")
+            //     if($('input').val() === ''){
+            //         $('input').append('<p>Required Field</p>');
+            //     };
+            //     if($('select').val() === ''){
+            //         $('select').append('<p>Required Field</p>');
+            //     };
+            // });
         });
     </script>
 </body>
