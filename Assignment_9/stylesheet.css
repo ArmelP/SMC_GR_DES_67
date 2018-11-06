@@ -1,0 +1,23 @@
+/* STYLES FOR ASSIGNMENT 9 BY ARMEL */
+
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgray;
+    background-image: url("samuel-zeller-722382-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+.btn-primary {
+    background-color: blueviolet;
+    border-color: darkgrey;
+}
+
+.form-control:focus {
+    border-color: blueviolet;
+}
