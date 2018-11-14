@@ -1,0 +1,29 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Canvas Stuff        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <canvas id="Box" width="600" height="480" style="border: 1px solid red;"> <!-- You can also style the ID in header or in CSS --> <!-- according to standard, a canvas should always have an ID, a width, and a height -->
+        Get a new browser to see this!    <!-- fallback -->
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("Box");
+        var context = canvas.getContext("2d");
+
+        context.fillStyle = "rgb(255,0,125)"; //will be implemented for all future drawings until reset.
+        context.fillRect(30, 30, 200, 300);   //pass through x & y position of top left, and width height. (x,y,width,height)
+
+        context.fillStyle = "rgb(35,125,100)"; //reseting fill style for subsequent shapes
+        context.fillRect(120,120,300,150);  //no z-index. last drawn shape is highest.
+    </script>
+</body>
+</html>
