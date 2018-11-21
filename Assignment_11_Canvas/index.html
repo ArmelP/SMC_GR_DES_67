@@ -28,75 +28,71 @@
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         
-        var w = window.innerWidth;
-        var h = window.innerHeight;
-        var ry = h * 0.54;
-        var rx = w * 0.3;
-        var rw = w * 0.41475;
-        var rh = h * 0.04875;
-        var absw = rx + rw;        
+        var w// = window.innerWidth;
+        var h// = window.innerHeight;
+        var ry// = h * 0.54;
+        var rx// = w * 0.3;
+        var rw// = w * 0.41475;
+        var rh// = h * 0.04875;
+        var absw// = rx + rw;        
 
-        var grd = c.createLinearGradient(rx,0,absw,0);
-        grd.addColorStop(0,"rgb(243, 243, 243)");        
-        grd.addColorStop(.5,"rgb(245, 245, 245)");
-        grd.addColorStop(1,"rgb(243, 243, 243)");
+        var grd// = c.createLinearGradient(rx,0,absw,0);
+        //grd.addColorStop(0,"rgb(243, 243, 243)");        
+        //grd.addColorStop(.5,"rgb(245, 245, 245)");
+        //grd.addColorStop(1,"rgb(243, 243, 243)");
 
-        var dynRad = w * 0.7;
-        var dynCenx = w / 2;
-        var dynCeny = (h * 0.5) + dynRad;
+        var dynRad// = w * 0.7;
+        var dynCenx// = w / 2;
+        var dynCeny// = (h * 0.5) + dynRad;
         // var dynStart = 0 - (0.5 * Math.PI * dynRad);
         // var dynEnd = 0 + (0.5 * Math.PI * dynRad);
 
-        var dynNadir = (h * 0.5) + (dynRad * 0.1224 * 2)      
+        var dynNadir// = (h * 0.5) + (dynRad * 0.1224 * 2)      
 
-
-        // // RECTANGLE TO COVER BACKGROUND TEXT
-        // c.fillStyle = grd;
-        // c.fillRect(rx,ry,rw,rh);   //pass through x & y position of top left, and width height. (x,y,width,height)        
-
-        // // ELLSWORTH KELLY PAINTING (ARC)
-        // c.shadowBlur=10;
-        // c.shadowOffsetY=20;
-        // c.shadowColor="grey";
-        // c.beginPath();
-        // c.arc(dynCenx, dynCeny, dynRad, -2.0, -1.14, false); 
-        // c.fillStyle = "rgb(49,78,158)";
-        // c.lineTo(dynCenx, dynNadir);      
-        // c.fill();  
-
-              
+        var x//  = Math.random() * innerWidth;
+        var y// = Math.random() * innerHeight;
+        var dx// = (Math.random() - 0.5) * 20;
+        var dy// = (Math.random() - 0.5) * 20;
+        var dynRadB//= w * 0.04;
+        
         initialize();
 
-        function initialize() {
+        function initialize(){
         window.addEventListener('resize', resizeCanvas, false);
         resizeCanvas();         
         }
 
-        function resizeCanvas() {
+        function resizeCanvas(){
             canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;           
+            canvas.height = window.innerHeight;   
+            
+            w = window.innerWidth;
+            h = window.innerHeight;
+            ry = h * 0.54;
+            rx = w * 0.3;
+            rw = w * 0.41475;
+            rh = h * 0.04875;
+            absw = rx + rw;        
 
-            // // RECTANGLE TO COVER BACKGROUND TEXT
-            // c.fillStyle = grd;
-            // c.fillRect(rx,ry,rw,rh);   //pass through x & y position of top left, and width height. (x,y,width,height)        
+            grd = c.createLinearGradient(rx,0,absw,0);
+            grd.addColorStop(0,"rgb(243, 243, 243)");        
+            grd.addColorStop(.5,"rgb(245, 245, 245)");
+            grd.addColorStop(1,"rgb(243, 243, 243)");
 
-            // // ELLSWORTH KELLY PAINTING (ARC)
-            // c.shadowBlur=10;
-            // c.shadowOffsetY=20;
-            // c.shadowColor="grey";
-            // c.beginPath();
-            // c.arc(dynCenx, dynCeny, dynRad, -2.0, -1.14, false); 
-            // c.fillStyle = "rgb(49,78,158)";
-            // c.lineTo(dynCenx, dynNadir);      
-            // c.fill();           
+            dynRad = w * 0.7;
+            dynCenx = w / 2;
+            dynCeny = (h * 0.5) + dynRad;
+            
+            dynNadir = (h * 0.5) + (dynRad * 0.1224 * 2)      
+
+            x  = Math.random() * innerWidth;
+            y = Math.random() * innerHeight;
+            dx = (Math.random() - 0.5) * 20;
+            dy = (Math.random() - 0.5) * 20;
+            dynRadB = w * 0.04;
+           
         }
 
-                 
-            var x  = Math.random() * innerWidth;
-            var y = Math.random() * innerHeight;
-            var dx = (Math.random() - 0.5) * 20;
-            var dy = (Math.random() - 0.5) * 20;
-            var dynRadB = w * 0.04;
 
         function animate(){
             requestAnimationFrame(animate);
@@ -137,53 +133,6 @@
         
         animate();
 
-
-
-
-        // ---------------------------------- OLD STUFF
-
-        // function dynamicRadius () {
-        //     if (canvas.width < canvas.height){dynradop = canvas.width;}
-        //     else {dynradop = canvas.height;}
-        // };
-
-        // var background = new Image();
-        // background.src = "wall.jpg";
-
-        // // Make sure the image is loaded first otherwise nothing will draw.
-        // window.onload = function(){
-        //     c.drawImage(background,0,0);   
-        // }
-
-        // //RECTANGLE
-        // c.fillStyle = "rgb(49,78,158)"; //will be implemented for all future drawings until reset.
-        // c.fillRect(30, 30, 200, 300);   //pass through x & y position of top left, and width height. (x,y,width,height)
-
-        // //LINE
-        // c.beginPath();
-        // c.moveTo(50, 300);
-        // c.lineTo(300, 50);
-        // c.lineTo(300, 600);
-        // c.lineTo(600, 100);
-        // c.strokeStyle = "#fa34a3"
-        // c.stroke();
-        
-        // //CIRCLES
-        // for (var i = 0; i < 6; i++) {
-        //     var x = Math.random() * window.innerWidth;
-        //     var y = Math.random() * window.innerHeight;
-        //     c.beginPath();
-        //     c.arc(x, y, 50, 0, Math.PI * 2, false);        
-        //     c.fillStyle = "rgb(255,0,0)";
-        //     c.fill();
-        // }
-        
-        // //RECTANGLE
-        // c.fillStyle = "rgb(243, 243, 243)";
-        // c.fillRect(0,120,300,150);
-
-        
-        
         
     </script>
 </body>
