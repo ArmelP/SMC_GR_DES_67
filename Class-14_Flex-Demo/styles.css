@@ -1,0 +1,20 @@
+.parent {
+    display: flex;
+    background-color: gainsboro;
+    min-height: 200px;
+    flex-direction: row; /* row is default */
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.child {
+    background-color: darksalmon;
+    color: rgb(10, 91, 197);
+    font-weight: 700;
+    flex-grow: 1;
+    border: 2px solid aliceblue;
+    flex-basis: 12rem;
+}
+
