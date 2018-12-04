@@ -1,0 +1,8 @@
+body, html {
+    font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+    background-color: transparent;
+    color: white;
+}

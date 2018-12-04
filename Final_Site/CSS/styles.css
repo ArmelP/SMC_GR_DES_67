@@ -1,0 +1,80 @@
+/* STYLES FOR FINAL SITE BY ARMEL */
+
+/* Everything re fonts and type */
+@import url("typography.css");
+
+/* Everthing re layout and grid */
+@import url("layout.css");
+
+/* Everthing re animation */
+@import url("animation.css");
+
+body, html {
+    background-image: url(../ASSETS/BG/dark-grey-bg.jpg);
+}
+
+.btn-outline-dark {
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon {
+    font-size: 2em;
+}
+
+.naviconknives {
+    width: 130px;
+    height: 130px;
+    background-image: url(../ASSETS/NAVICONS/knivesicon.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.naviconsharpeners {
+    width: 130px;
+    height: 130px;
+    background-image: url(../ASSETS/NAVICONS/sharpenersicon.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.naviconlubricants {
+    width: 130px;
+    height: 130px;
+    background-image: url(../ASSETS/NAVICONS/lubricantsicon.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.naviconblog {
+    width: 130px;
+    height: 130px;
+    background-image: url(../ASSETS/NAVICONS/blogicon.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.naviconcontact {
+    width: 130px;
+    height: 130px;
+    background-image: url(../ASSETS/NAVICONS/contacticon.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.shoppingIcon {
+    height: 50px;
+    width: auto;
+}

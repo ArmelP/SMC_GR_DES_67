@@ -1,0 +1,97 @@
+.naviconknives:hover {
+animation: turnK 1s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+
+    @keyframes turnK { 
+        from {
+            background-image: url(../ASSETS/NAVICONS/knivesicon.png);
+            transform: rotate(0deg);
+        }
+        to {
+            background-image: url(../ASSETS/NAVICONS/knivesicon_white.png);
+            transform: rotate(-100deg);
+        }
+    }
+
+
+
+.naviconsharpeners:hover {
+animation: turnS 1s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+
+    @keyframes turnS { 
+        from {
+            background-image: url(../ASSETS/NAVICONS/sharpenersicon.png);
+            transform: rotate(0deg);
+        }
+        to {
+            background-image: url(../ASSETS/NAVICONS/sharpenersicon_white.png);
+            transform: rotate(-100deg);
+        }
+    }
+
+
+
+.naviconlubricants:hover {
+animation: turnL 1s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+
+    @keyframes turnL { 
+        from {
+            background-image: url(../ASSETS/NAVICONS/lubricantsicon.png);
+            transform: rotate(0deg);
+        }
+        to {
+            background-image: url(../ASSETS/NAVICONS/lubricantsicon_white.png);
+            transform: rotate(-100deg);
+        }
+    }
+
+
+
+.naviconblog:hover {
+animation: turnB 1s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+
+    @keyframes turnB { 
+        from {
+            background-image: url(../ASSETS/NAVICONS/blogicon.png);
+            transform: rotate(0deg);
+        }
+        to {
+            background-image: url(../ASSETS/NAVICONS/blogicon_white.png);
+            transform: rotate(-100deg);
+        }
+    }
+
+
+
+.naviconcontact:hover {
+animation: turnC 1s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+
+    @keyframes turnC { 
+        from {
+            background-image: url(../ASSETS/NAVICONS/contacticon.png);
+            transform: rotate(0deg);
+        }
+        to {
+            background-image: url(../ASSETS/NAVICONS/contacticon_white.png);
+            transform: rotate(-100deg);
+        }
+    }
