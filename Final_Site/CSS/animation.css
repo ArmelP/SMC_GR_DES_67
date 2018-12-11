@@ -1,5 +1,5 @@
 .naviconknives:hover {
-animation: turnK 1s;
+animation: turnK 0.5s;
 animation-iteration-count: 1;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
@@ -19,7 +19,7 @@ animation-fill-mode: forwards;
 
 
 .naviconsharpeners:hover {
-animation: turnS 1s;
+animation: turnS 0.5s;
 animation-iteration-count: 1;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
@@ -39,7 +39,7 @@ animation-fill-mode: forwards;
 
 
 .naviconlubricants:hover {
-animation: turnL 1s;
+animation: turnL 0.5s;
 animation-iteration-count: 1;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
@@ -59,7 +59,7 @@ animation-fill-mode: forwards;
 
 
 .naviconblog:hover {
-animation: turnB 1s;
+animation: turnB 0.5s;
 animation-iteration-count: 1;
 animation-timing-function: linear;
 animation-fill-mode: forwards;
@@ -79,7 +79,7 @@ animation-fill-mode: forwards;
 
 
 .naviconcontact:hover {
-animation: turnC 1s;
+animation: turnC 0.5s;
 animation-iteration-count: 1;
 animation-timing-function: linear;
 animation-fill-mode: forwards;

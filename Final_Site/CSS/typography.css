@@ -1,8 +1,45 @@
 body, html {
     font-family: Arial, sans-serif;
+    color: white;
 }
 
 .jumbotron {
     background-color: transparent;
-    color: white;
 }
+
+.lead, label, h4, h3, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mfgPara {
+    margin-bottom: 0px;
+}
+
+.bodycopy {
+    font-size: 0.75rem;
+}
+
+.cartOverlayLink {
+    font-size: 1.8rem;         
+    color: red;    
+    font-weight: 700;    
+}
+
+.checkoutBox {
+    color: rgb(51, 51, 51);
+}
+
+@media (min-width: 576px) { 
+    .lead {
+        font-size: 2rem;        
+    }    
+ }
+
+@media (min-width: 768px) { 
+    .lead {
+        font-size: 2.5rem;
+    }
+
+    
+ }
+

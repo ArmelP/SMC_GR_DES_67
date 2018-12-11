@@ -11,6 +11,8 @@
 
 body, html {
     background-image: url(../ASSETS/BG/dark-grey-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .btn-outline-dark {
@@ -27,6 +29,10 @@ body, html {
 
 .navbar-toggler-icon {
     font-size: 2em;
+}
+
+.navbar-toggler:focus {
+    outline-width: 0px;
 }
 
 .naviconknives {
@@ -74,7 +80,153 @@ body, html {
     background-repeat: no-repeat;
 }
 
+
+.SMnaviconknives {
+    width: 70px;
+    height: 70px;
+    background-image: url(../ASSETS/NAVICONS/knivesicon_white.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    transform: rotate(-83deg);
+}
+
+.SMnaviconsharpeners {
+    width: 70px;
+    height: 70px;
+    background-image: url(../ASSETS/NAVICONS/sharpenersicon_white.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    transform: rotate(-105deg);
+}
+
+.SMnaviconlubricants {
+    width: 70px;
+    height: 70px;
+    background-image: url(../ASSETS/NAVICONS/lubricantsicon_white.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    transform: rotate(-97deg);
+}
+
+.SMnaviconblog {
+    width: 70px;
+    height: 70px;
+    background-image: url(../ASSETS/NAVICONS/blogicon_white.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    transform: rotate(-70deg);
+}
+
+.SMnaviconcontact {
+    width: 70px;
+    height: 70px;
+    background-image: url(../ASSETS/NAVICONS/contacticon_white.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    transform: rotate(-86deg);
+}
+
 .shoppingIcon {
     height: 50px;
-    width: auto;
+    width: 50px;
+    background-image: url(../ASSETS/NAVICONS/shoppingbag.png);
+    background-size: contain;    
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#jumboText {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* backdrop-filter: blur(10px); */
+}
+
+#mainHome {
+    background-image: url(../ASSETS/BG/homemainbg2crop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.apmodBtn {
+    background-color: transparent;
+}
+
+.btn-outline-dark {
+    border-color: white;
+}
+
+.dim {
+    background-color: rgba(0, 0, 0, 0.85);
+    
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+
+.card {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn, .btn-primary, .btn-lg, .btn-block {
+    background-color: darkgray;
+    border-color: transparent;
+}
+
+.btn:hover, .btn-primary:hover, .btn-lg:hover, .btn-block:hover {
+    background-color: darkgray;
+    border-color: transparent;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #515151;
+}
+
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #515151;
+}
+
+@media (min-width: 576px) { 
+    #mainHome {
+        background-image: url(../ASSETS/BG/homemainbg2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+ }
+
+@media (min-width: 768px) { 
+    #mainHome {
+        background-image: url(../ASSETS/BG/homemainbg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    #jumboText {
+        background-color: transparent;        
+    }
+}
+
+@media (min-width: 992px) { 
+    #mainHome {
+        background-image: url(../ASSETS/BG/homemainbg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+        
 }
